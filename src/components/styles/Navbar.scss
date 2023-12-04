@@ -1,0 +1,229 @@
+// Define la animación slideIn desde la izquierda
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+header.navbar-space {
+    /* background-color: green; */
+    width: 100%;
+    height: 10vh;
+    z-index: 999;
+
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    overflow: hidden;
+
+    nav.navbar-desktop {
+        width: 95%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div.navMenu-space { 
+            width: calc(100%/3);
+            height: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 1vw;
+
+            z-index: 10;
+
+            aside.burgerMenu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1vh;
+                cursor: pointer;
+
+                transition: 0.5s ease;
+                
+                div { 
+                    background-color: #FFF;
+                    width: 2vw;
+                    height: 0.15vw;
+                    transition: 0.5s ease;
+                }
+
+                &.active {
+                    div:first-child { 
+                        transform: rotate(45deg);
+                        transform-origin: center;
+                    }
+
+                    div:nth-child(2n) {
+                        display: none;
+                    }
+
+                    div:last-child {
+                        transform: rotate(-45deg);
+                        position: relative;
+                        bottom: 1.3vh;
+                        /* transform-origin: center; */
+                    }
+                }
+            }
+
+            h4 { 
+                color: var(--color, #FFF);
+                font-family: "Montserrat", sans-serif;
+                font-size: 1vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.65px;
+            }
+        }   
+
+        div.navLogo-space { 
+            width: calc(100%/3);
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img { 
+                width: auto;
+                height: 5vh;
+            }
+        }
+
+        div.navLinks-space { 
+            width: calc(100%/3);
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 4vw;
+
+            a { 
+                color: var(--color, #FFF);
+                font-family: "Montserrat", sans-serif;
+                font-size: 1vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.65px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+
+    nav.navbar-mobile { 
+        display: none;
+    }
+
+    aside.slidevar-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 35vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(10px);
+
+        transition: transform 0.3s ease-in-out;
+
+        display: none;
+
+        &.active { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div.navLinks-space {
+            /* background-color: red; */
+            width: 20vw;
+            height: 40vh;
+
+            position: relative;
+            top: 12vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 2vh;
+
+            a {
+                text-decoration: none;
+                color: var(--color, #FFF);
+                font-family: "Montserrat", sans-serif;
+                font-size: 1vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.32px;
+
+                &::before {
+                    content: "-";
+                    position: relative;
+                    right: 1vw;
+                    font-size: 1.25vw;
+                }
+            }
+        }
+
+        div.socialMedia-space { 
+            /* background-color: blue; */
+            width: 15vw;
+            height: 15vh;
+
+            display: grid;
+            place-items: center;
+
+            position: relative;
+            bottom: 5vh;
+            
+            h3 {
+                color: var(--color, #FFF);
+                font-family: Montserrat;
+                font-size: 1vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 1.32px;
+            }
+
+            div { 
+                /* background-color: red; */
+                width: 15vw;
+                height: 10vh;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1vw;
+
+                a {
+                    text-decoration: none;
+
+                    img {
+                        width: 2.5vw;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
