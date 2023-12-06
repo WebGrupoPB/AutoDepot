@@ -92,30 +92,30 @@ const Navbar = () => {
 
             <aside className={`slidevar-menu ${menuOpen ? 'active' : ''}`}>
                 <div className="navLinks-space">
-                    <NavLink to={"#"}>
+                    <NavLink to={"/inicio"} activeClassName="active">
                         Inicio
                     </NavLink>
 
-                    <NavLink to={"#"}>
+                    <NavLink to={"/servicios"} activeClassName="active">
                         Servicios
                     </NavLink>
 
-                    <NavLink to={"#"}>
+                    <NavLink to={"/agendar"} activeClassName="active">
                         Agendar Cita
                     </NavLink>
 
-                    <NavLink to={"#"}>
+                    <NavLink to={"/ubicaciones"} activeClassName="active">
                         Ubicaciones
                     </NavLink>
 
-                    <NavLink to={"#"}>
+                    <NavLink to={"/nosotros"} activeClassName="active">
                         ¿Quienes somos?
                     </NavLink>
 
-                    <NavLink to={"#"}>
-                        Promociones
+                    <NavLink to={"/marcas"}>
+                        Marcas
                     </NavLink>
-                    <NavLink to={"#"}>
+                    <NavLink to={"/empleo"}>
                         Empleo
                     </NavLink>
                 </div>

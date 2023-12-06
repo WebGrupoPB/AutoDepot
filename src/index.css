@@ -10,7 +10,21 @@ body {
 }
 
 .header-navbar { 
+    width: 100%;
     display: grid;
     place-items: center;
     z-index: 999;
+    position: fixed;
+    top: 0;
+
+    animation: enhanceHeader linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 70vh;
+}
+
+@keyframes enhanceHeader { 
+    to { 
+        background-color: rgba(0, 0, 0, 1);
+        backdrop-filter: blur(10px);
+    }
 }

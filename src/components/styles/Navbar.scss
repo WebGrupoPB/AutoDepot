@@ -1,5 +1,5 @@
 // Define la animación slideIn desde la izquierda
-@keyframes slideInLeft {
+/* @keyframes slideInLeft {
     0% {
         opacity: 0;
         transform: translateX(-100%);
@@ -8,11 +8,11 @@
         opacity: 1;
         transform: translateX(0);
     }
-}
+} */
 
 
 header.navbar-space {
-    /* background-color: green; */
+    background-color: transparent;
     width: 100%;
     height: 10vh;
     z-index: 999;
@@ -21,7 +21,7 @@ header.navbar-space {
     place-items: center;
     position: relative;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
     nav.navbar-desktop {
         width: 95%;
@@ -131,25 +131,27 @@ header.navbar-space {
     }
 
     aside.slidevar-menu {
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 0;
+        left: -35vw;
 
+        z-index: 5;
         width: 35vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.75);
         backdrop-filter: blur(10px);
 
-        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
-        display: none;
+        transition: left 1s ease-out; /* Agregar transición para animación suave */
 
-        &.active { 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+        &.active {
+            left: 0; /* Muestra la barra lateral cuando la clase active está presente */
         }
+
 
         div.navLinks-space {
             /* background-color: red; */
@@ -181,6 +183,15 @@ header.navbar-space {
                     right: 1vw;
                     font-size: 1.25vw;
                 }
+
+                &.active { 
+                    margin: 2vh 0;
+                    font-size: 1.5vw;
+
+                    &::before {
+                        content: "+";
+                    }
+                }
             }
         }
 
@@ -197,7 +208,7 @@ header.navbar-space {
             
             h3 {
                 color: var(--color, #FFF);
-                font-family: Montserrat;
+                font-family: "Montserrat", sans-serif;
                 font-size: 1vw;
                 font-style: normal;
                 font-weight: 500;

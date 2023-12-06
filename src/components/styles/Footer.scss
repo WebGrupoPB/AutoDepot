@@ -1,0 +1,186 @@
+
+footer.footer-space { 
+    background-color: #000;
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    header.footer-logo {
+        /* background-color: red; */
+        width: 33vw;
+        height: 40vh;
+
+        display: grid;
+        place-items: center;
+
+        div.footer-logo-space {
+            /* background-color: yellow; */ 
+            width: 33vw;
+            height: 30vh;
+            margin-left: 1vw;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 0vw;
+
+            img.footer-logo-img { 
+                width: 15vw;
+                height: auto;
+                margin-left: 2.5vw;
+            }
+
+            div.footer-nosotros-text { 
+                /* background-color: red; */
+                width: 15vw;
+                height: 30vh;
+                margin-left: 3vw;
+
+                h6 { 
+                    color: #FFF;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.25vw;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin: .5vh 0;
+                }
+                 
+                p {
+                    width: 90%;
+                    color: #FFF;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 105.4%; /* 15.81px */
+                    letter-spacing: 0.825px;
+                }
+            }
+        }
+    }
+
+    article.footer-info {
+        /* background-color: blue; */
+        width: 32vw;
+        height: 40vh;
+
+        position: relative;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 4vw;
+
+        div.footer-info-contactos {
+            /* background-color: blue; */
+            width: 12vw;
+            height: 25vh;
+
+            h6 { 
+                color: #FFF;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.25vw;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                margin-bottom: 1vh;
+            }
+
+            span { 
+                display: flex;
+                gap: 1vw;
+
+                img {
+                    width: 2vw;
+                    height: auto;
+                }
+
+                p {
+                    color: #FFF;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 0.75vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+
+        div.footer-info-ubicaciones {
+            /* background-color: red; */
+            width: 15vw;
+            height: 35vh;
+
+            h6 { 
+                color: #FFF;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.25vw;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                margin-bottom: 1vh;
+            }
+
+            span { 
+                display: flex;
+                gap: 1vw;
+
+                img {
+                    width: 2vw;
+                    height: auto;
+                }
+                
+
+                img.gps-icon {
+                    width: 3vw;
+                    height: auto;
+                }
+
+                img.gps-icon2 {
+                    width: 2.25vw;
+                    height: auto;
+                }
+
+                p {
+                    color: #FFF;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 0.75vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+
+        p.footer-info-copyright {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 2vw;
+
+            text-align: center;
+            color: #FFF;
+            /* font-family: 'Montserrat', sans-serif; */
+            font-size: .75rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    aside.footer-map {
+        /* background-color: yellow; */
+        width: 30vw;
+        height: 40vh;
+
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+}
