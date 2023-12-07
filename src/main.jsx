@@ -4,6 +4,7 @@ import Inicio from './routes/Inicio.jsx';
 import Nosotros from './routes/Nosotros.jsx';
 import Marcas from './routes/Marcas.jsx';
 import Ubicaciones from './routes/Ubicaciones.jsx';
+import Agendar from './routes/Angendar.jsx';
 
 
 import './index.css'
@@ -38,7 +39,10 @@ import {
     path: "/ubicaciones",
     element: <Ubicaciones />,
    },
-
+   {
+    path: "/agendar",
+    element: <Agendar />,
+   },
 
  ]); 
 

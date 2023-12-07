@@ -76,11 +76,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="navLinks-space">
-                    <NavLink to={"#"}>
+                    <NavLink to={"/agendar"} onClick={scrollToTop}>
                         AGENDAR CITA
                     </NavLink>
 
-                    <NavLink to={"#"}>
+                    <NavLink to={"/ubicaciones"} onClick={scrollToTop}>
                         UBICACIONES
                     </NavLink>
                 </div>
@@ -92,30 +92,30 @@ const Navbar = () => {
 
             <aside className={`slidevar-menu ${menuOpen ? 'active' : ''}`}>
                 <div className="navLinks-space">
-                    <NavLink to={"/inicio"} activeClassName="active">
+                    <NavLink to={"/inicio"} activeClassName="active" onClick={scrollToTop}>
                         Inicio
                     </NavLink>
 
-                    <NavLink to={"/servicios"} activeClassName="active">
+                    <NavLink to={"/servicios"} activeClassName="active" onClick={scrollToTop}>
                         Servicios
                     </NavLink>
 
-                    <NavLink to={"/agendar"} activeClassName="active">
+                    <NavLink to={"/agendar"} activeClassName="active" onClick={scrollToTop}>
                         Agendar Cita
                     </NavLink>
 
-                    <NavLink to={"/ubicaciones"} activeClassName="active">
+                    <NavLink to={"/ubicaciones"} activeClassName="active" onClick={scrollToTop}>
                         Ubicaciones
                     </NavLink>
 
-                    <NavLink to={"/nosotros"} activeClassName="active">
+                    <NavLink to={"/nosotros"} activeClassName="active" onClick={scrollToTop}>
                         ¿Quienes somos?
                     </NavLink>
 
-                    <NavLink to={"/marcas"}>
+                    <NavLink to={"/marcas"} onClick={scrollToTop}>
                         Marcas
                     </NavLink>
-                    <NavLink to={"/empleo"}>
+                    <NavLink to={"/empleo"} onClick={scrollToTop}>
                         Empleo
                     </NavLink>
                 </div>

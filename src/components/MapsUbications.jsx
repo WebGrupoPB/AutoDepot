@@ -5,7 +5,7 @@ import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '100%',
-  height: '75vh'
+  height: '100%'
 };
 
 
@@ -23,7 +23,7 @@ const centerCiudadGuatemala = {
 
 
 
-function Maps({id}) {
+function MapsUbi({id}) {
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: "AIzaSyCscKjHtmXETUk2EaN9Oc0XMK7Ez2cll8Y"
   })
@@ -64,4 +64,4 @@ function Maps({id}) {
   ) : <></>
 }
 
-export default React.memo(Maps)
+export default React.memo(MapsUbi)
