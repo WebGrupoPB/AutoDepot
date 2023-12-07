@@ -13,7 +13,7 @@ import "./styles/Nosotros.scss"
 const Nosotros = () => {
     return (
         <>         
-            <main>
+            <main className="not-home">
                 <header className='header-navbar'>
                     <Navbar />
                 </header>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import GoogleMaps from './GoogleMaps';
+import MapFooter from './MapFooter';
 
 
 import './styles/Footer.scss';
@@ -72,7 +72,7 @@ const Footer = () => {
         </article>
 
         <aside className='footer-map'>
-            <GoogleMaps />
+            <MapFooter />
         </aside>
     </footer>
   );

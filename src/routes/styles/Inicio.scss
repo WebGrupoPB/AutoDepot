@@ -1,7 +1,20 @@
-main {
+// Define la animación slideIn desde la izquierda
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+main.not-home {
     position: relative;
     width: 100%;
     min-height: 100vh;
+    animation: slideInLeft 700ms ease-out backwards;
 
 }
 

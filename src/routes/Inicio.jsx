@@ -13,7 +13,7 @@ import "./styles/Inicio.scss"
 const Inicio = () => {
     return (
         <>         
-            <main>
+            <main className="not-home">
                 <header className='header-navbar'>
                     <Navbar />
                 </header>

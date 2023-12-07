@@ -13,7 +13,7 @@ import "./styles/Marcas.scss"
 const Marcas = () => {
     return (
         <>         
-            <main>
+            <main className="not-home">
                 <header className='header-navbar'>
                     <Navbar />
                 </header>

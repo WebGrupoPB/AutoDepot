@@ -56,7 +56,7 @@ header.navbar-space {
                     background-color: #FFF;
                     width: 2vw;
                     height: 0.15vw;
-                    transition: 0.5s ease;
+                    transition: 1s ease;
                 }
 
                 &.active {
@@ -139,7 +139,7 @@ header.navbar-space {
         width: 35vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.75);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(5px);
 
         display: flex;
         flex-direction: column;
@@ -150,6 +150,7 @@ header.navbar-space {
 
         &.active {
             left: 0; /* Muestra la barra lateral cuando la clase active está presente */
+            backdrop-filter: blur(10px);
         }
 
 

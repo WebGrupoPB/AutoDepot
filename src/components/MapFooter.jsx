@@ -108,7 +108,7 @@ const mapOptions = {
   };
 
 
-function GoogleMaps() {
+function MapFooter() {
     const { isLoaded } = useJsApiLoader({
         googleMapsApiKey: "AIzaSyCscKjHtmXETUk2EaN9Oc0XMK7Ez2cll8Y"
       })
@@ -127,4 +127,4 @@ function GoogleMaps() {
   ) : <></>
 }
 
-export default React.memo(GoogleMaps)
+export default React.memo(MapFooter)

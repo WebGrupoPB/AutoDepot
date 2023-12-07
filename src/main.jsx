@@ -3,6 +3,7 @@ import Home from './routes/Home.jsx'
 import Inicio from './routes/Inicio.jsx';
 import Nosotros from './routes/Nosotros.jsx';
 import Marcas from './routes/Marcas.jsx';
+import Ubicaciones from './routes/Ubicaciones.jsx';
 
 
 import './index.css'
@@ -32,6 +33,10 @@ import {
    {
     path: "/marcas",
     element: <Marcas />,
+   },
+   {
+    path: "/ubicaciones",
+    element: <Ubicaciones />,
    },
 
 
