@@ -169,4 +169,329 @@ section.marcas-section {
     }
 }
 
+/*************** Pantallas tablet (768px) y tablet L (1024px) con orientacion vertical  *******************/
+@media (min-width: 750px) and (max-width: 1025px) and (orientation: portrait) {
+
+    main.not-home {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        animation: slideInLeft 700ms ease-out backwards;
+    }
+
+    section.heroInicio-section { 
+        background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/heroCover-inicio.png");
+        background-size: 125% 100%;
+        background-position: center;
+        width: 100%;
+        height: 70vh;
+
+        position: relative;
+        top: 0vh;
+    }
+
+    section.agendaCita-section { 
+        /* background-color: blue; */
+        width: 100%;
+        height: 120vh;
+        display: grid;
+        place-items: center;
+        margin-bottom: 10vh;
+
+        div.agendaCita-space {
+            /* background-color: red; */
+            width: 95%;
+            height: 100vh;
+
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+
+            a.agenda-item { 
+                text-decoration: none;
+                /* background-color: green; */
+                border: 1px solid #fff;
+                width: calc(88vw/5);
+                height: 100vh;
+            
+                position: relative;
+
+                transition: 500ms ease;
+
+                &:hover { 
+                    transform: scale(1.1);
+                }
+
+                aside.img-space {
+                    /* background-color: yellow; */
+                    width: 100%;
+                    height: 80%;
+                    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
+                    position: absolute;
+                    top: 0;
+                    z-index: 1;
+
+                    img { 
+                        width: calc(88vw/5);
+                        height: 80vh;
+                        object-fit: cover;
+                    }
+
+                    h2 { 
+                        color: var(--color, #FFF);
+                        text-align: center;
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 2.5vw;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 105.4%; /* 42.16px */
+                        letter-spacing: 2.2px;
+                        text-transform: uppercase;
+
+                        position: absolute;
+                        top: 40%;
+                        right: 30%;
+                        transform: rotate(-90deg);
+                        width: 21vw;
+                        height: 6vh;
+                        
+                    }
+                }
+
+                article.text-space { 
+                    background-color: #5AB031;
+                    width: 100%;
+                    height: 80%;
+                    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
+
+                    position: absolute;
+                    top: 20%;
+
+                    h3 { 
+                        color: var(--color, #FFF);
+                        text-align: center;
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 2.25vw;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 105.4%; /* 36.89px */
+                        letter-spacing: 1.925px;
+
+                        position: absolute;
+                        bottom: 11%;
+                        transform: rotate(25deg);
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    section.marcas-section { 
+        /* background-color: red; */
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 5vh;
+        /* border-top: 1px solid ; */
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.70);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        article.title { 
+            background-color: #5AB031;
+            width: 50vw;
+            height: 10vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 { 
+                color: var(--color, #FFF);
+                font-family: "Montserrat", sans-serif;
+                font-size: 2.5vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 105.4%; /* 36.89px */
+                letter-spacing: 1.925px;
+            }
+        }
+
+        aside.carrusel-logos-space {
+            /* background-color: blue; */
+            width: 100%;
+            height: 30vh;
+
+            display: grid;
+            place-items: center;
+        }
+    }
+}   
+
+/*************** Pantallas Movil con orientacion vertical  *******************/
+@media (max-width: 749px) and (orientation: portrait) { 
+    main.not-home {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        animation: slideInLeft 700ms ease-out backwards;
+    }
+
+    section.heroInicio-section { 
+        background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/heroCover-inicio.png");
+        background-size: 150% 100%;
+        background-position: center;
+        width: 100%;
+        height: 60vh;
+
+        position: relative;
+        top: 0vh;
+    }
+
+    section.agendaCita-section { 
+        /* background-color: blue; */
+        width: 100%;
+        height: 120vh;
+        display: grid;
+        place-items: center;
+        margin-bottom: 10vh;
+
+        div.agendaCita-space {
+            /* background-color: red; */
+            width: 95%;
+            height: 100vh;
+
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+
+            a.agenda-item { 
+                text-decoration: none;
+                /* background-color: green; */
+                border: 1px solid #fff;
+                width: calc(88vw/5);
+                height: 100vh;
+            
+                position: relative;
+
+                transition: 500ms ease;
+
+                &:hover { 
+                    transform: scale(1.1);
+                }
+
+                aside.img-space {
+                    /* background-color: yellow; */
+                    width: 100%;
+                    height: 80%;
+                    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
+                    position: absolute;
+                    top: 0;
+                    z-index: 1;
+
+                    img { 
+                        width: calc(88vw/5);
+                        height: 80vh;
+                        object-fit: cover;
+                    }
+
+                    h2 { 
+                        color: var(--color, #FFF);
+                        text-align: center;
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 2.5vw;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 105.4%; /* 42.16px */
+                        letter-spacing: 2.2px;
+                        text-transform: uppercase;
+
+                        position: absolute;
+                        top: 40%;
+                        right: 30%;
+                        transform: rotate(-90deg);
+                        width: 21vw;
+                        height: 6vh;
+                        
+                    }
+                }
+
+                article.text-space { 
+                    background-color: #5AB031;
+                    width: 100%;
+                    height: 80%;
+                    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
+
+                    position: absolute;
+                    top: 20%;
+
+                    h3 { 
+                        color: var(--color, #FFF);
+                        text-align: center;
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 2.25vw;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 105.4%; /* 36.89px */
+                        letter-spacing: 1.925px;
+
+                        position: absolute;
+                        bottom: 11%;
+                        transform: rotate(25deg);
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    section.marcas-section { 
+        /* background-color: red; */
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 5vh;
+        /* border-top: 1px solid ; */
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.70);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        article.title { 
+            background-color: #5AB031;
+            width: 50vw;
+            height: 10vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 { 
+                color: var(--color, #FFF);
+                font-family: "Montserrat", sans-serif;
+                font-size: 2.5vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 105.4%; /* 36.89px */
+                letter-spacing: 1.925px;
+            }
+        }
+
+        aside.carrusel-logos-space {
+            /* background-color: blue; */
+            width: 100%;
+            height: 30vh;
+
+            display: grid;
+            place-items: center;
+        }
+    }
+}
+
 

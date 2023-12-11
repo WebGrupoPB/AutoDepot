@@ -126,10 +126,6 @@ header.navbar-space {
         }
     }
 
-    nav.navbar-mobile { 
-        display: none;
-    }
-
     aside.slidevar-menu {
         position: fixed;
         top: 0;
@@ -139,18 +135,18 @@ header.navbar-space {
         width: 35vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.75);
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(0px) !important;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
 
-        transition: left 1s ease-out; /* Agregar transición para animación suave */
+        transition: left 1s ease-out, backdrop-filter 1s ease-out; /* Agregar transición para animación suave */
 
         &.active {
             left: 0; /* Muestra la barra lateral cuando la clase active está presente */
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px) !important;
         }
 
 
@@ -233,6 +229,426 @@ header.navbar-space {
                     img {
                         width: 2.5vw;
                         height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*************** Pantallas tablet (768px) y tablet L (1024px) con orientacion vertical  *******************/
+@media (min-width: 750px) and (max-width: 1025px) and (orientation: portrait) { 
+    header.navbar-space {
+        /* background-color: green; */
+        width: 100%;
+        height: 10vh;
+        z-index: 999;
+    
+        display: grid;
+        place-items: center;
+        position: relative;
+    
+        /* overflow: hidden; */
+    
+        nav.navbar-desktop {
+            width: 95%;
+            height: 100%;
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            div.navMenu-space { 
+                width: calc(100%/3);
+                height: 100%;
+                
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 1vw;
+    
+                z-index: 10;
+    
+                aside.burgerMenu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1vh;
+                    cursor: pointer;
+    
+                    transition: 0.5s ease;
+                    
+                    div { 
+                        background-color: #FFF;
+                        width: 5vw;
+                        height: 0.4vw;
+                        transition: 1s ease;
+                    }
+    
+                    &.active {
+                        div:first-child { 
+                            transform: rotate(45deg);
+                            transform-origin: center;
+                        }
+    
+                        div:nth-child(2n) {
+                            display: none;
+                        }
+    
+                        div:last-child {
+                            transform: rotate(-45deg);
+                            position: relative;
+                            bottom: 1.3vh;
+                            /* transform-origin: center; */
+                        }
+                    }
+                }
+    
+                h4 { 
+                    color: var(--color, #FFF);
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 3vw;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.65px;
+                }
+            }   
+    
+            div.navLogo-space { 
+                width: calc(100%/3);
+                height: 100%;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                img { 
+                    width: auto;
+                    height: 5vh;
+                }
+            }
+    
+            div.navLinks-space { 
+                display: none;
+            }
+        }
+    
+        aside.slidevar-menu {
+            position: fixed;
+            top: 0;
+            left: -60vw;
+    
+            z-index: 5;
+            width: 60vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(0px) !important;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+    
+            transition: left 1s ease-out, backdrop-filter 1s ease-out; /* Agregar transición para animación suave */
+    
+            &.active {
+                left: 0; /* Muestra la barra lateral cuando la clase active está presente */
+                backdrop-filter: blur(10px) !important;
+            }
+    
+    
+            div.navLinks-space {
+                /* background-color: red; */
+                width: 40vw;
+                height: 40vh;
+    
+                position: relative;
+                top: 12vh;
+    
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                gap: 2vh;
+    
+                a {
+                    text-decoration: none;
+                    color: var(--color, #FFF);
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 3vw;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.32px;
+    
+                    &::before {
+                        content: "-";
+                        position: relative;
+                        right: 1vw;
+                        font-size: 3vw;
+                    }
+    
+                    &.active { 
+                        margin: 3vh 0;
+                        font-size: 4vw;
+    
+                        &::before {
+                            content: "+";
+                        }
+                    }
+                }
+            }
+    
+            div.socialMedia-space { 
+                /* background-color: blue; */
+                width: 35vw;
+                height: 15vh;
+    
+                display: grid;
+                place-items: center;
+    
+                position: relative;
+                bottom: 5vh;
+                
+                h3 {
+                    color: var(--color, #FFF);
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 3vw;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.32px;
+                }
+    
+                div { 
+                    /* background-color: red; */
+                    width: 35vw;
+                    height: 10vh;
+    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1vw;
+    
+                    a {
+                        text-decoration: none;
+    
+                        img {
+                            width: 7vw;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*************** Pantallas Movil con orientacion vertical  *******************/
+@media (max-width: 749px) and (orientation: portrait) { 
+    header.navbar-space {
+        /* background-color: green; */
+        width: 100%;
+        height: 10vh;
+        z-index: 999;
+    
+        display: grid;
+        place-items: center;
+        position: relative;
+    
+        /* overflow: hidden; */
+    
+        nav.navbar-desktop {
+            width: 95%;
+            height: 100%;
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            div.navMenu-space { 
+                width: calc(100%/3);
+                height: 100%;
+                
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 1vw;
+    
+                z-index: 10;
+    
+                aside.burgerMenu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1vh;
+                    cursor: pointer;
+    
+                    transition: 0.5s ease;
+                    
+                    div { 
+                        background-color: #FFF;
+                        width: 5vw;
+                        height: 0.4vw;
+                        transition: 1s ease;
+                    }
+    
+                    &.active {
+                        div:first-child { 
+                            transform: rotate(45deg);
+                            transform-origin: center;
+                        }
+    
+                        div:nth-child(2n) {
+                            display: none;
+                        }
+    
+                        div:last-child {
+                            transform: rotate(-45deg);
+                            position: relative;
+                            bottom: 1.3vh;
+                            /* transform-origin: center; */
+                        }
+                    }
+                }
+    
+                h4 { 
+                    color: var(--color, #FFF);
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 3vw;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.65px;
+                }
+            }   
+    
+            div.navLogo-space { 
+                width: calc(100%/3);
+                height: 100%;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                img { 
+                    width: auto;
+                    height: 5vh;
+                }
+            }
+    
+            div.navLinks-space { 
+                display: none;
+            }
+        }
+    
+        aside.slidevar-menu {
+            position: fixed;
+            top: 0;
+            left: -60vw;
+    
+            z-index: 5;
+            width: 60vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(0px) !important;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+    
+            transition: left 1s ease-out, backdrop-filter 1s ease-out; /* Agregar transición para animación suave */
+    
+            &.active {
+                left: 0; /* Muestra la barra lateral cuando la clase active está presente */
+                backdrop-filter: blur(10px) !important;
+            }
+    
+    
+            div.navLinks-space {
+                /* background-color: red; */
+                width: 40vw;
+                height: 40vh;
+    
+                position: relative;
+                top: 12vh;
+    
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                gap: 2vh;
+    
+                a {
+                    text-decoration: none;
+                    color: var(--color, #FFF);
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 3vw;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.32px;
+    
+                    &::before {
+                        content: "-";
+                        position: relative;
+                        right: 1vw;
+                        font-size: 3vw;
+                    }
+    
+                    &.active { 
+                        margin: 3vh 0;
+                        font-size: 4vw;
+    
+                        &::before {
+                            content: "+";
+                        }
+                    }
+                }
+            }
+    
+            div.socialMedia-space { 
+                /* background-color: blue; */
+                width: 35vw;
+                height: 15vh;
+    
+                display: grid;
+                place-items: center;
+    
+                position: relative;
+                bottom: 5vh;
+                
+                h3 {
+                    color: var(--color, #FFF);
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 3vw;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 1.32px;
+                }
+    
+                div { 
+                    /* background-color: red; */
+                    width: 35vw;
+                    height: 10vh;
+    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1vw;
+    
+                    a {
+                        text-decoration: none;
+    
+                        img {
+                            width: 7vw;
+                            height: auto;
+                        }
                     }
                 }
             }

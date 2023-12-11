@@ -40,9 +40,9 @@ import {
     element: <Ubicaciones />,
    },
    {
-    path: "/agendar",
+    path: "/agendar/:serviceType",
     element: <Agendar />,
-   },
+  },
 
  ]); 
 

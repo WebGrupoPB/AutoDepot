@@ -58,6 +58,9 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const scrollToAgendar = () => {
+    window.scrollTo({ top: 500, behavior: 'smooth' });
+};
 
     return (
         <header className='navbar-space'>
@@ -76,7 +79,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="navLinks-space">
-                    <NavLink to={"/agendar"} onClick={scrollToTop}>
+                    <NavLink to={"/agendar/agendar-cita"} onClick={scrollToTop}>
                         AGENDAR CITA
                     </NavLink>
 
@@ -86,21 +89,17 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            <nav className="navbar-mobile">
-
-            </nav>
-
             <aside className={`slidevar-menu ${menuOpen ? 'active' : ''}`}>
                 <div className="navLinks-space">
                     <NavLink to={"/inicio"} activeClassName="active" onClick={scrollToTop}>
                         Inicio
                     </NavLink>
 
-                    <NavLink to={"/servicios"} activeClassName="active" onClick={scrollToTop}>
+                    {/* <NavLink to={"/servicios"} activeClassName="active" onClick={scrollToTop}>
                         Servicios
-                    </NavLink>
+                    </NavLink> */}
 
-                    <NavLink to={"/agendar"} activeClassName="active" onClick={scrollToTop}>
+                    <NavLink to={"/agendar/agendar-cita"} activeClassName="active" onClick={scrollToTop}>
                         Agendar Cita
                     </NavLink>
 

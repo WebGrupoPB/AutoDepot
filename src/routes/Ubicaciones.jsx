@@ -21,6 +21,10 @@ const Ubicaciones = () => {
 
     /* const textAlert = setCurrentId(1) ? "hola" : ""; */
 
+    const scrollToMap = () => {
+        window.scrollTo({ top: 1200, behavior: 'smooth' });
+    };
+
     return (
         <>         
             <main className="not-home">
@@ -38,12 +42,12 @@ const Ubicaciones = () => {
                     </article>
 
                     <section className="filtroMaps-area">
-                        <div className="filtro-item" onClick={() => onToggle(0)} >
+                        <div className="filtro-item" onClick={() => { onToggle(0); scrollToMap(); }} >
                             <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Ubicaciones/guatemalaCover.png" alt="" />
                             <h1>Guatemala</h1>
                         </div>
 
-                        <div className="filtro-item" onClick={() => onToggle(1)} >
+                        <div className="filtro-item" onClick={() => { onToggle(1); scrollToMap(); }} >
                             <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Ubicaciones/elSalvadorCover.png" alt="" />
                             <h1>El Salvador</h1>
                         </div>
