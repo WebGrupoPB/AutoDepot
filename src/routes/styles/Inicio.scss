@@ -211,7 +211,7 @@ section.marcas-section {
 
     section.heroInicio-section { 
         background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/heroCover-inicio.png");
-        background-size: 150% 100%;
+        background-size: 125vw 60vh;
         background-position: center;
         width: 100%;
         height: 60vh;
@@ -245,7 +245,7 @@ section.marcas-section {
             h1 { 
                 color: var(--color, #FFF);
                 font-family: "Montserrat", sans-serif;
-                font-size: 2.5vw;
+                font-size: 3vw !important;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 105.4%; /* 36.89px */

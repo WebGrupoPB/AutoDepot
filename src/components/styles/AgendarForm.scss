@@ -60,131 +60,153 @@ section.agendar-section {
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
-                
-                div.input-group {
-                    border-radius: 18.5px;
-                    background: var(--color, #FFF);
-                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+                aside.formGroup-1 { 
+                    /* background-color: red; */
                     width: 25vw;
-                    height: 5vh;
+                    height: 25vh;
 
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
 
-                    overflow: hidden;
-
-                    aside { 
-                        /* background-color: #4A529F; */
-                        width: 5vw;
-                        height: 5vh;
-                        display: grid;
-                        place-items: center;
-
-                        img { 
-                            width: 2vw;
-                            height: auto;
-                        }
-                    }
-
-                    
-
-                    input { 
-                        width: 20vw;
-                        height: 5vh;
-
-                        color: #000;
-                        font-family: "Montserrat", sans-serif;
-                        font-size: 1vw;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-
-                        border: none;
-                    }
-                } 
-
-                div.date-group { 
-                    width: 25vw;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-
-                    h3 {
-                        color: #000;
-                        font-family: "Montserrat", sans-serif;
-                        font-size: 1.25vw;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
-                    }
-
-                    input.dateInput {
+                    div.input-group {
                         border-radius: 18.5px;
                         background: var(--color, #FFF);
                         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-                        width: 10vw;
+    
+                        width: 25vw;
                         height: 5vh;
-                        padding: 0 1.5vw;
-                        border: none;
-
-                        text-transform: uppercase;
-
-                        position: relative;
+    
                         display: flex;
-                        flex-direction: row-reverse;
                         align-items: center;
-                        justify-content: center;
-
-                        gap: 1vw;
-
-                        color: #000;
-                        font-family: "Montserrat", sans-serif;
-                        font-size: 1vw;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-
-                        &::-webkit-calendar-picker-indicator {
-                            display: block;
-                            opacity: 0;
-
-                            z-index: 2;
+                        justify-content: space-between;
+    
+                        overflow: hidden;
+    
+                        aside { 
+                            /* background-color: #4A529F; */
+                            width: 5vw;
+                            height: 5vh;
+                            display: grid;
+                            place-items: center;
+    
+                            img { 
+                                width: 2vw;
+                                height: auto;
+                            }
                         }
-
-                        &::after {
-                            content: ''; /* Deja el contenido vacío para que no se vea afectado */
-                            background: url('https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Calendar.svg') center center/contain no-repeat; /* Reemplaza con la URL correcta */
-                            width: 5vh; /* Ajusta según sea necesario */
-                            height: 5vh; /* Ajusta según sea necesario */
-
-                            position: absolute;
-                            left: 1vw;
-
-                            cursor: pointer;
-                          }
-                    }
+    
+                        
+    
+                        input { 
+                            width: 20vw;
+                            height: 5vh;
+    
+                            color: #000;
+                            font-family: "Montserrat", sans-serif;
+                            font-size: 1vw;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+    
+                            border: none;
+                        }
+                    } 
                 }
-
-                button.submitBtn { 
-                    border: 0.25vw solid #5AB031;
-                    background: #4A529F;
+                
+                aside.formGroup-2 { 
+                    /* background-color: green; */
                     width: 25vw;
-                    height: 7.5vh;
-                    border-radius: 0;
+                    height: 17vh;
 
-                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
 
-                    span {
-                        color: var(--color, #FFF);
-                        font-family: "Montserrat", sans-serif;
-                        font-size: 1.25vw;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
+                    div.date-group { 
+                        width: 25vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        h3 {
+                            color: #000;
+                            font-family: "Montserrat", sans-serif;
+                            font-size: 1.25vw;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+    
+                        input.dateInput {
+                            border-radius: 18.5px;
+                            background: var(--color, #FFF);
+                            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                            width: 10vw;
+                            height: 5vh;
+                            padding: 0 1.5vw;
+                            border: none;
+    
+                            text-transform: uppercase;
+    
+                            position: relative;
+                            display: flex;
+                            flex-direction: row-reverse;
+                            align-items: center;
+                            justify-content: center;
+    
+                            gap: 1vw;
+    
+                            color: #000;
+                            font-family: "Montserrat", sans-serif;
+                            font-size: 1vw;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+    
+                            &::-webkit-calendar-picker-indicator {
+                                display: block;
+                                opacity: 0;
+    
+                                z-index: 2;
+                            }
+    
+                            &::after {
+                                content: ''; /* Deja el contenido vacío para que no se vea afectado */
+                                background: url('https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Calendar.svg') center center/contain no-repeat; /* Reemplaza con la URL correcta */
+                                width: 5vh; /* Ajusta según sea necesario */
+                                height: 5vh; /* Ajusta según sea necesario */
+    
+                                position: absolute;
+                                left: 1vw;
+    
+                                cursor: pointer;
+                              }
+                        }
                     }
-                }
+    
+                    button.submitBtn { 
+                        border: 0.25vw solid #5AB031;
+                        background: #4A529F;
+                        width: 25vw;
+                        height: 7.5vh;
+                        border-radius: 0;
+    
+                        cursor: pointer;
+    
+                        span {
+                            color: var(--color, #FFF);
+                            font-family: "Montserrat", sans-serif;
+                            font-size: 1.25vw;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                }  
             }
         }
     }
@@ -254,131 +276,362 @@ section.agendar-section {
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
-                    
-                    div.input-group {
-                        border-radius: 18.5px;
-                        background: var(--color, #FFF);
-                        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    
+
+                    aside.formGroup-1 { 
+                        /* background-color: red; */
                         width: 30vw;
-                        height: 3vh;
+                        height: 15vh;
     
                         display: flex;
+                        flex-direction: column;
                         align-items: center;
                         justify-content: space-between;
-    
-                        overflow: hidden;
-    
-                        aside { 
-                            /* background-color: #4A529F; */
-                            width: 5vw;
-                            height: 3vh;
-                            display: grid;
-                            place-items: center;
-    
-                            img { 
-                                width: 3vw;
-                                height: auto;
-                            }
-                        }
-    
-                        
-    
-                        input { 
-                            width: 25vw;
-                            height: 3vh;
-    
-                            color: #000;
-                            font-family: "Montserrat", sans-serif;
-                            font-size: 1.5vw;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: normal;
-    
-                            border: none;
-                        }
-                    } 
-    
-                    div.date-group { 
-                        width: 30vw;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-    
-                        h3 {
-                            color: #000;
-                            font-family: "Montserrat", sans-serif;
-                            font-size: 2vw;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: normal;
-                        }
-    
-                        input.dateInput {
+
+                        div.input-group {
                             border-radius: 18.5px;
                             background: var(--color, #FFF);
                             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-                            width: 15vw;
+        
+                            width: 30vw;
                             height: 3vh;
-                            padding: 0 1.5vw;
-                            border: none;
-    
-                            text-transform: uppercase;
-    
-                            position: relative;
+        
                             display: flex;
-                            flex-direction: row-reverse;
                             align-items: center;
-                            justify-content: center;
-    
-                            gap: 1vw;
-    
-                            color: #000;
-                            font-family: "Montserrat", sans-serif;
-                            font-size: 1.5vw;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: normal;
-    
-                            &::-webkit-calendar-picker-indicator {
-                                display: block;
-                                opacity: 0;
-    
-                                z-index: 2;
+                            justify-content: space-between;
+        
+                            overflow: hidden;
+        
+                            aside { 
+                                /* background-color: #4A529F; */
+                                width: 5vw;
+                                height: 3vh;
+                                display: grid;
+                                place-items: center;
+        
+                                img { 
+                                    width: 3vw;
+                                    height: auto;
+                                }
                             }
-    
-                            &::after {
-                                content: ''; /* Deja el contenido vacío para que no se vea afectado */
-                                background: url('https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Calendar.svg') center center/contain no-repeat; /* Reemplaza con la URL correcta */
-                                width: 2vh; /* Ajusta según sea necesario */
-                                height: 2vh; /* Ajusta según sea necesario */
-    
-                                position: absolute;
-                                left: 1vw;
-    
-                                cursor: pointer;
-                              }
-                        }
+        
+                            input { 
+                                width: 25vw;
+                                height: 3vh;
+        
+                                color: #000;
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 1.5vw;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+        
+                                border: none;
+                            }
+                        }   
                     }
+                    
+                    aside.formGroup-2 { 
+                        /* background-color: yellow; */
+                        width: 30vw;
+                        height: 12vh;
     
-                    button.submitBtn { 
-                        border: 0.25vw solid #5AB031;
-                        background: #4A529F;
-                        width: 25vw;
-                        height: 5vh;
-                        border-radius: 0;
-    
-                        cursor: pointer;
-    
-                        span {
-                            color: var(--color, #FFF);
-                            font-family: "Montserrat", sans-serif;
-                            font-size: 2.5vw;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: normal;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        div.date-group { 
+                            width: 30vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+        
+                            h3 {
+                                color: #000;
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 2vw;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+        
+                            input.dateInput {
+                                border-radius: 18.5px;
+                                background: var(--color, #FFF);
+                                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                                width: 15vw;
+                                height: 3vh;
+                                padding: 0 1.5vw;
+                                border: none;
+        
+                                text-transform: uppercase;
+        
+                                position: relative;
+                                display: flex;
+                                flex-direction: row-reverse;
+                                align-items: center;
+                                justify-content: center;
+        
+                                gap: 1vw;
+        
+                                color: #000;
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 1.5vw;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+        
+                                &::-webkit-calendar-picker-indicator {
+                                    display: block;
+                                    opacity: 0;
+        
+                                    z-index: 2;
+                                }
+        
+                                &::after {
+                                    content: ''; /* Deja el contenido vacío para que no se vea afectado */
+                                    background: url('https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Calendar.svg') center center/contain no-repeat; /* Reemplaza con la URL correcta */
+                                    width: 2vh; /* Ajusta según sea necesario */
+                                    height: 2vh; /* Ajusta según sea necesario */
+        
+                                    position: absolute;
+                                    left: 1vw;
+        
+                                    cursor: pointer;
+                                  }
+                            }
                         }
+        
+                        button.submitBtn { 
+                            border: 0.25vw solid #5AB031;
+                            background: #4A529F;
+                            width: 25vw;
+                            height: 5vh;
+                            border-radius: 0;
+        
+                            cursor: pointer;
+        
+                            span {
+                                color: var(--color, #FFF);
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 2.5vw;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+                        }
+                    }              
+                }
+            }
+        }
+    }
+}
+
+/*************** Pantallas Movil con orientacion vertical  *******************/
+@media (max-width: 749px) and (orientation: portrait) { 
+    section.agendar-section { 
+        /* background-color: red; */
+        width: 100%;
+        height: 100vh;
+    
+        display: grid;
+        place-items: center;
+    
+        div.agendar-area {
+            background-color: green;
+            width: 90vw;
+            min-height: 40vh;
+    
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+    
+            aside.imageService-space { 
+                background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Alineacion-img1.png");
+                background-size: 100% 100%;
+                width: 90vw;
+                height: 40vh;
+    
+                img { 
+                    width: 90vw;
+                    height: 40vh;
+                    /* object-fit: ; */
+                }
+            }
+    
+            article.formService-space {
+                background-color: #fff;
+                box-shadow: 0px 0px 27px -1px rgba(0, 0, 0, 0.30);
+                width: 90vw;
+                height: 40vh;
+    
+                display: grid;
+                place-items: center;
+    
+                h1 {
+                    color: #000;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 4vw;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+    
+                    margin: 1vh 0;
+                }
+    
+                form.agendarForm {
+                    /* background-color: green; */
+                    width: 70vw;
+                    height: 32vh;
+    
+                    position: relative;
+                    bottom: 1vh;
+    
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    aside.formGroup-1 { 
+                        /* background-color: red; */
+                        width: 33vw;
+                        height: 20vh;
+
+                        div.input-group {
+                            border-radius: 18.5px;
+                            background: var(--color, #FFF);
+                            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        
+                            width: 33vw;
+                            height: 4vh;
+        
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+        
+                            overflow: hidden;
+        
+                            aside { 
+                                /* background-color: #4A529F; */
+                                width: 6vw;
+                                height: 4vh;
+                                display: grid;
+                                place-items: center;
+        
+                                img { 
+                                    width: 3.5vw;
+                                    height: auto;
+                                }
+                            }
+        
+                            
+        
+                            input { 
+                                width: 27vw;
+                                height: 4vh;
+        
+                                color: #000;
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 2vw;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+        
+                                border: none;
+                            }
+                        } 
                     }
+                    
+                    aside.formGroup-2 { 
+                        /* background-color: red; */
+                        width: 33vw;
+                        height: 10vh;
+
+                        position: relative;
+                        bottom: 5vh;
+
+                        div.date-group { 
+                            width: 30vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+        
+                            h3 {
+                                color: #000;
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 2vw;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+        
+                            input.dateInput {
+                                border-radius: 18.5px;
+                                background: var(--color, #FFF);
+                                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                                width: 17vw;
+                                height: 4vh;
+                                padding: 0 1.5vw;
+                                border: none;
+        
+                                text-transform: uppercase;
+        
+                                position: relative;
+                                display: flex;
+                                flex-direction: row-reverse;
+                                align-items: center;
+                                justify-content: center;
+        
+                                gap: 1vw;
+        
+                                color: #000;
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 1.5vw;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+        
+                                &::-webkit-calendar-picker-indicator {
+                                    display: block;
+                                    opacity: 0;
+        
+                                    z-index: 2;
+                                }
+        
+                                &::after {
+                                    content: ''; /* Deja el contenido vacío para que no se vea afectado */
+                                    background: url('https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Calendar.svg') center center/contain no-repeat; /* Reemplaza con la URL correcta */
+                                    width: 2vh; /* Ajusta según sea necesario */
+                                    height: 2vh; /* Ajusta según sea necesario */
+        
+                                    position: absolute;
+                                    left: 1vw;
+        
+                                    cursor: pointer;
+                                  }
+                            }
+                        }
+        
+                        button.submitBtn { 
+                            border: 0.25vw solid #5AB031;
+                            background: #4A529F;
+                            width: 30vw;
+                            height: 5vh;
+                            border-radius: 0;
+        
+                            cursor: pointer;
+        
+                            span {
+                                color: var(--color, #FFF);
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 2.5vw;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+                        }
+                    }                
                 }
             }
         }

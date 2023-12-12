@@ -146,3 +146,69 @@ $animationSpeed: 30s;
 		
 	}
 }
+
+/*************** Pantallas Movil con orientacion vertical  *******************/
+@media (max-width: 749px) and (orientation: portrait) {
+	// Styling
+	.slider {
+		/* background: white; */
+		box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+		height: 25vh;
+		margin: auto;
+		overflow:hidden;
+		position: relative;
+		width: 100%;
+		
+		&::before,
+		&::after {
+			@include white-gradient;
+			content: "";
+			height: 25vh;
+			position: absolute;
+			width: 15%;
+			z-index: 2;
+		}
+		
+		&::after {
+			right: 0;
+			top: 0;
+			transform: rotateZ(180deg);
+		}
+
+		&::before {
+			left: 0;
+			top: 0;
+		}
+		
+		.slide-track-left, .slide-track-right  {
+			display: flex;
+			width: calc(220vw);
+			height: 25vh;
+
+			.slide {
+				height: 25vh;
+				width: 100%;
+				/* background-color: red; */
+
+				display: flex;
+				align-items: center;
+
+				img.logo-img { 
+					width: auto;
+					height: 8vh;
+					
+				}
+			}
+		}
+
+		.slide-track-left {
+			animation: scrollLeft $animationSpeed linear infinite;
+		}
+
+		.slide-track-right {
+			animation: scrollRight $animationSpeed linear infinite;
+		}
+		
+		
+	}
+}

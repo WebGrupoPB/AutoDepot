@@ -302,3 +302,157 @@ section.MapUbication-section {
         }
     }
 }
+
+/*************** Pantallas Movil con orientacion vertical  *******************/
+@media (max-width: 749px) and (orientation: portrait) {
+    main {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+    
+    }
+    
+    section.heroUbicaciones-section { 
+        background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Ubicaciones/heroCover-ubicaciones.png");
+        background-size: cover;
+        width: 100%;
+        height: 60vh;
+    
+        position: relative;
+        top: 0vh;
+    
+        display: grid;
+        place-items: center;
+    
+        h1 { 
+            color: var(--color, #FFF);
+            font-family: "Montserrat", sans-serif;
+            font-size: 10vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    
+    
+    section.MapUbication-section {
+        /* background-color: red; */
+        width: 100%;
+        min-height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    
+        article.title {
+            background-color: #5AB031;
+            width: 100%;
+            height: 10vh;
+            border-bottom: 2vh solid #4A529F;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            h1 {
+                color: var(--color, #FFF);
+                font-family: "Montserrat", sans-serif;
+                font-size: 4vw;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 105.4%; /* 36.89px */
+                letter-spacing: 1.925px;
+            }
+        }
+    
+        section.filtroMaps-area { 
+            /* background-color: yellow; */
+            width: 100%;
+            min-height: 50vh;
+    
+            display: grid;
+    
+            div.filtro-item { 
+                /* background-color: skyblue; */
+                width: 100%;
+                height: 30vh;
+                overflow: hidden;
+                
+                display: grid;
+                place-items: center;
+                position: relative;
+                cursor: pointer;
+    
+                h1 { 
+                    color: var(--color, #FFF);
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 3.75vw;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 105.4%; /* 52.7px */
+                    letter-spacing: 2.75px;
+                    z-index: 1;
+                }
+    
+                img { 
+                    position: absolute;
+                    top: 0;
+    
+                    width: 100vw;
+                    height: 30vh;
+                    object-fit: cover;
+    
+                    transition: 1s ease;
+                }
+    
+                &:hover { 
+                    img { 
+                        transform: scale(1.25);
+                    }
+                }
+            }
+        }
+    
+        aside.googleMap-area {
+            /* background-color: blue; */
+            width: 100%;
+            min-height: 20vh;
+    
+            display: grid;
+            place-items: center;
+    
+            div.googleMap-space {
+                /* background-color: red; */
+                width: 100vw;
+                height: 50vh;
+    
+                display: grid;
+                place-items: center;
+            }
+    
+            div.textAlert-space { 
+                /* background-color: green; */
+                width: 80vw;
+                height: 5vh;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                p {
+                    color: #000;
+                   /* font-family: Inter; */
+                    font-size: 3vw;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+    
+                    span { 
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+}

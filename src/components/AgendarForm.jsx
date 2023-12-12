@@ -33,41 +33,45 @@ const AgendarForm = ({linkSetting}) => {
                             method=""
                             className="agendarForm"
                         >         
-                            <div className="input-group">
-                                <aside>
-                                    <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Letter.svg" alt="email-icon" />
-                                </aside>
-                                
-                                <input type="email" name="" placeholder="CORREO ELECTRÓNICO" id="" />
-                            </div> 
 
-                            <div className="input-group">
-                                <aside>
-                                    <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Phone.svg" alt="phone-icon" />
-                                </aside>
+                            <aside className="formGroup-1">
+                                <div className="input-group">
+                                    <aside>
+                                        <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Letter.svg" alt="email-icon" />
+                                    </aside>
+                                    
+                                    <input type="email" name="" placeholder="CORREO ELECTRÓNICO" id="" />
+                                </div> 
 
-                                <input type="tel" name="" placeholder="NÚMERO TELEFÓNICO" id="" />
-                            </div>
+                                <div className="input-group">
+                                    <aside>
+                                        <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Phone.svg" alt="phone-icon" />
+                                    </aside>
 
-                            <div className="input-group">
-                                <aside>
-                                    <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/User.svg" alt="user-icon" />
-                                </aside>
+                                    <input type="tel" name="" placeholder="NÚMERO TELEFÓNICO" id="" />
+                                </div>
 
-                                <input type="text" name="" placeholder="NOMBRE COMPLETO" id="" />
-                            </div>                                     
+                                <div className="input-group">
+                                    <aside>
+                                        <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/User.svg" alt="user-icon" />
+                                    </aside>
 
-                            <div className="date-group">
-                                <h3>FECHA</h3>
-                                <input type="date" name="" id="" className="dateInput" />
-                            </div>
+                                    <input type="text" name="" placeholder="NOMBRE COMPLETO" id="" />
+                                </div>                    
+                            </aside>
+                                            
+                            <aside className="formGroup-2">
+                                <div className="date-group">
+                                    <h3>FECHA</h3>
+                                    <input type="date" name="" id="" className="dateInput" />
+                                </div>
 
-                            <button type="submit" className="submitBtn"> 
-                                <span>
-                                    Enviar Solicitud
-                                </span>
-                            </button>
-
+                                <button type="submit" className="submitBtn"> 
+                                    <span>
+                                        Enviar Solicitud
+                                    </span>
+                                </button>
+                            </aside>
                         </form>
                     </article>
                 </div>
