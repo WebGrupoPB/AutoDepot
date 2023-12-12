@@ -28,3 +28,35 @@ body {
         backdrop-filter: blur(10px);
     }
 }
+
+/*************** Pantallas tablet (768px) y tablet L (1024px) con orientacion vertical  *******************/
+@media (min-width: 750px) and (max-width: 1025px) and (orientation: portrait) { 
+    .header-navbar { 
+        width: 100%;
+        display: grid;
+        place-items: center;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+    
+        animation: enhanceHeader linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 60vh;
+    }
+}
+
+/*************** Pantallas Movil con orientacion vertical  *******************/
+@media (max-width: 749px) and (orientation: portrait) { 
+    .header-navbar { 
+        width: 100%;
+        display: grid;
+        place-items: center;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+    
+        animation: enhanceHeader linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 60vh;
+    }
+}

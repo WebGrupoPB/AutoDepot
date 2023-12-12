@@ -109,8 +109,8 @@ main.cover-home {
     
             aside.title { 
                 position: absolute;
-                bottom: 2vh;
-                left: 5vw;
+                bottom: 3vh;
+                left: 7vw;
                 animation: slideInLeft 2s ease-in-out;
     
                 h1 { 
@@ -122,8 +122,8 @@ main.cover-home {
                     font-weight: 400;
                     line-height: 105.4%; /* 52.7px */
                     letter-spacing: 2.75px;
-                    padding-left: 2vw;
-                    border-left: 0.5vw solid #fff;
+                    padding-left: 4vw;
+                    border-left: 0.75vw solid #fff;
                 }
             }
         }

@@ -189,3 +189,198 @@ section.agendar-section {
         }
     }
 }
+
+/*************** Pantallas tablet (768px) y tablet L (1024px) con orientacion vertical  *******************/
+@media (min-width: 750px) and (max-width: 1025px) and (orientation: portrait) { 
+    section.agendar-section { 
+        /* background-color: red; */
+        width: 100%;
+        height: 70vh;
+    
+        display: grid;
+        place-items: center;
+    
+        div.agendar-area {
+            /* background-color: green; */
+            width: 90vw;
+            height: 40vh;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            aside.imageService-space { 
+                background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Alineacion-img1.png");
+                background-size: 100% 100%;
+                width: 54vw;
+                height: 40vh;
+    
+                img { 
+                    width: 54vw;
+                    height: 40vh;
+                    /* object-fit: ; */
+                }
+            }
+    
+            article.formService-space {
+                background-color: #fff;
+                box-shadow: 0px 0px 27px -1px rgba(0, 0, 0, 0.30);
+                width: 36vw;
+                height: 40vh;
+    
+                display: grid;
+                place-items: center;
+    
+                h1 {
+                    color: #000;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 2.5vw;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+    
+                    margin: 1vh 0;
+                }
+    
+                form.agendarForm {
+                    /* background-color: green; */
+                    width: 32vw;
+                    height: 32vh;
+    
+                    position: relative;
+                    bottom: 1vh;
+    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                    div.input-group {
+                        border-radius: 18.5px;
+                        background: var(--color, #FFF);
+                        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+                        width: 30vw;
+                        height: 3vh;
+    
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        overflow: hidden;
+    
+                        aside { 
+                            /* background-color: #4A529F; */
+                            width: 5vw;
+                            height: 3vh;
+                            display: grid;
+                            place-items: center;
+    
+                            img { 
+                                width: 3vw;
+                                height: auto;
+                            }
+                        }
+    
+                        
+    
+                        input { 
+                            width: 25vw;
+                            height: 3vh;
+    
+                            color: #000;
+                            font-family: "Montserrat", sans-serif;
+                            font-size: 1.5vw;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+    
+                            border: none;
+                        }
+                    } 
+    
+                    div.date-group { 
+                        width: 30vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+    
+                        h3 {
+                            color: #000;
+                            font-family: "Montserrat", sans-serif;
+                            font-size: 2vw;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+    
+                        input.dateInput {
+                            border-radius: 18.5px;
+                            background: var(--color, #FFF);
+                            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                            width: 15vw;
+                            height: 3vh;
+                            padding: 0 1.5vw;
+                            border: none;
+    
+                            text-transform: uppercase;
+    
+                            position: relative;
+                            display: flex;
+                            flex-direction: row-reverse;
+                            align-items: center;
+                            justify-content: center;
+    
+                            gap: 1vw;
+    
+                            color: #000;
+                            font-family: "Montserrat", sans-serif;
+                            font-size: 1.5vw;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+    
+                            &::-webkit-calendar-picker-indicator {
+                                display: block;
+                                opacity: 0;
+    
+                                z-index: 2;
+                            }
+    
+                            &::after {
+                                content: ''; /* Deja el contenido vacío para que no se vea afectado */
+                                background: url('https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Agendar/Calendar.svg') center center/contain no-repeat; /* Reemplaza con la URL correcta */
+                                width: 2vh; /* Ajusta según sea necesario */
+                                height: 2vh; /* Ajusta según sea necesario */
+    
+                                position: absolute;
+                                left: 1vw;
+    
+                                cursor: pointer;
+                              }
+                        }
+                    }
+    
+                    button.submitBtn { 
+                        border: 0.25vw solid #5AB031;
+                        background: #4A529F;
+                        width: 25vw;
+                        height: 5vh;
+                        border-radius: 0;
+    
+                        cursor: pointer;
+    
+                        span {
+                            color: var(--color, #FFF);
+                            font-family: "Montserrat", sans-serif;
+                            font-size: 2.5vw;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

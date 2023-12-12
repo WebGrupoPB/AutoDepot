@@ -475,7 +475,7 @@ header.navbar-space {
                 display: flex;
                 align-items: center;
                 justify-content: start;
-                gap: 1vw;
+                gap: 2vw;
     
                 z-index: 10;
     
@@ -491,8 +491,8 @@ header.navbar-space {
                     
                     div { 
                         background-color: #FFF;
-                        width: 5vw;
-                        height: 0.4vw;
+                        width: 7vw;
+                        height: 0.5vw;
                         transition: 1s ease;
                     }
     
@@ -518,7 +518,7 @@ header.navbar-space {
                 h4 { 
                     color: var(--color, #FFF);
                     font-family: "Montserrat", sans-serif;
-                    font-size: 3vw;
+                    font-size: 4vw;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
@@ -587,7 +587,7 @@ header.navbar-space {
                     text-decoration: none;
                     color: var(--color, #FFF);
                     font-family: "Montserrat", sans-serif;
-                    font-size: 3vw;
+                    font-size: 3.25vw;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
@@ -597,12 +597,12 @@ header.navbar-space {
                         content: "-";
                         position: relative;
                         right: 1vw;
-                        font-size: 3vw;
+                        font-size: 3.25vw;
                     }
     
                     &.active { 
                         margin: 3vh 0;
-                        font-size: 4vw;
+                        font-size: 4.5vw;
     
                         &::before {
                             content: "+";
@@ -625,7 +625,7 @@ header.navbar-space {
                 h3 {
                     color: var(--color, #FFF);
                     font-family: "Montserrat", sans-serif;
-                    font-size: 3vw;
+                    font-size: 3.25vw;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
@@ -646,7 +646,7 @@ header.navbar-space {
                         text-decoration: none;
     
                         img {
-                            width: 7vw;
+                            width: 9vw;
                             height: auto;
                         }
                     }

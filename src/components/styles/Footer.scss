@@ -191,15 +191,16 @@ footer.footer-space {
     footer.footer-space { 
         background-color: #000;
         width: 100%;
-        height: 30vh;
+        min-height: 60vh;
 
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
 
         header.footer-logo {
             /* background-color: red; */
-            width: 33vw;
+            width: 80vw;
             height: 30vh;
 
             display: grid;
@@ -207,32 +208,32 @@ footer.footer-space {
 
             div.footer-logo-space {
                 /* background-color: yellow; */ 
-                width: 33vw;
+                width: 75vw;
                 height: 20vh;
                 margin-left: 1vw;
 
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
 
                 gap: 0vw;
 
                 img.footer-logo-img { 
-                    width: 15vw;
+                    width: 35vw;
                     height: auto;
                     margin-left: 2.5vw;
                 }
 
                 div.footer-nosotros-text { 
-                    /* background-color: red; */
-                    width: 15vw;
+                    /* background-color: green; */
+                    width: 30vw;
                     height: 20vh;
                     margin-left: 3vw;
 
                     h6 { 
                         color: #FFF;
                         font-family: 'Montserrat', sans-serif;
-                        font-size: 1.25vw;
+                        font-size: 3vw;
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
@@ -243,7 +244,7 @@ footer.footer-space {
                         width: 90%;
                         color: #FFF;
                         font-family: 'Montserrat', sans-serif;
-                        font-size: 1vw;
+                        font-size: 2vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 105.4%; /* 15.81px */
@@ -255,24 +256,24 @@ footer.footer-space {
 
         article.footer-info {
             /* background-color: blue; */
-            width: 32vw;
-            height: 30vh;
+            width: 80vw;
+            height: 35vh;
 
             position: relative;
             display: flex;
             align-items: start;
             justify-content: center;
-            gap: 4vw;
+            gap: 5vw;
 
             div.footer-info-contactos {
-                /* background-color: blue; */
-                width: 12vw;
-                height: 15vh;
+                /* background-color: yellow; */
+                width: 35vw;
+                height: 25vh;
 
                 h6 { 
                     color: #FFF;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 1.25vw;
+                    font-size: 3vw;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
@@ -292,7 +293,7 @@ footer.footer-space {
                     p {
                         color: #FFF;
                         font-family: 'Montserrat', sans-serif;
-                        font-size: 0.75vw;
+                        font-size: 1.75vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
@@ -301,14 +302,14 @@ footer.footer-space {
             }
 
             div.footer-info-ubicaciones {
-                /* background-color: red; */
-                width: 15vw;
-                height: 35vh;
+               /* background-color: red; */
+                width: 35vw;
+                height: 25vh;
 
                 h6 { 
                     color: #FFF;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 1.25vw;
+                    font-size: 3vw;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
@@ -339,7 +340,7 @@ footer.footer-space {
                     p {
                         color: #FFF;
                         font-family: 'Montserrat', sans-serif;
-                        font-size: 0.75vw;
+                        font-size: 1.75vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
@@ -356,7 +357,7 @@ footer.footer-space {
                 text-align: center;
                 color: #FFF;
                 /* font-family: 'Montserrat', sans-serif; */
-                font-size: .75rem;
+                font-size: 1.5vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -364,13 +365,7 @@ footer.footer-space {
         }
 
         aside.footer-map {
-            /* background-color: yellow; */
-            width: 30vw;
-            height: 30vh;
-
-            display: flex;
-            align-items: start;
-            justify-content: center;
+            display: none;
         }
     }
 }
