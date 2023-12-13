@@ -30,6 +30,13 @@ const Nosotros = () => {
 
                         <article className="nosotrosText-space">
                             <h2>¿QUIENES SOMOS?</h2>
+
+                            <p>
+                                Bienvenido a AutoDepot, donde la excelencia en el servicio se encuentra con la experiencia 
+                                automotriz de vanguardia. Estamos aquí para cuidar de su vehículo como si fuera 
+                                nuestro propio tesoro sobre ruedas.
+                            </p>
+
                             <p>
                                 Somos una empresa líder en el ramo automotriz que iniciamos un 18/01/2014, 
                                 nuestra primer agencia fue en el área de villa hermosa brindando servicios de mecánica 

@@ -22,12 +22,13 @@ const Footer = () => {
                 <div className='footer-nosotros-text'>
                     <h6>Nosotros</h6>
                     <p>
-                        <strong>¡Descubra la Diferencia en Logística Con Nosotros!</strong>
+                        <strong>¡Bienvenido a AutoDepot!</strong>
                     </p>
 
                     <p>
-                        Listos para simplificar su cadena de suministro y llevar su logística al siguiente nivel. 
-                        Permítanos ser su socio estratégico.
+                        donde la excelencia en el servicio se encuentra con la experiencia 
+                        automotriz de vanguardia. Estamos aquí para cuidar de su vehículo como si fuera nuestro 
+                        propio tesoro sobre ruedas.
                     </p>
                 </div>
             </div>
