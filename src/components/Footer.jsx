@@ -8,6 +8,11 @@ import './styles/Footer.scss';
 
 
 const Footer = () => {
+    const [currentId, setCurrentId] = useState(0);
+
+    const onToggle = (id) => {
+        setCurrentId(id);
+    };
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -51,19 +56,25 @@ const Footer = () => {
             <div className='footer-info-ubicaciones'>
                 <h6>Ubicaciones</h6>
 
-                <span>
+                <span onClick={() => { onToggle(0);}}>
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Footer/gps_icon_Footer.svg" alt="gps-icon"/>
-                    <p>Calzada Atanasio Tzul 20.74 Z.12</p>
+                    <p  onClick={() => { onToggle(0);}}>
+                        Calzada Atanasio Tzul 20.74 Z.12
+                    </p>
                 </span>
 
-                <span>
+                <span onClick={() => { onToggle(1);}}>
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Footer/gps_icon_Footer.svg" alt="gps-icon" className='gps-icon' />
-                    <p>Villa Hermosa 1, 23 calle 20-90 Z.7.San Miguel Petapa</p>
+                    <p  onClick={() => { onToggle(1);}}>
+                        Villa Hermosa 1, 23 calle 20-90 Z.7.San Miguel Petapa
+                    </p>
                 </span>
 
-                <span>
+                <span onClick={() => { onToggle(2);}}>
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Footer/gps_icon_Footer.svg" alt="gps-icon" className='gps-icon2' />
-                    <p>Álamos 0Av. 1-87 Z.6 San Miguel Petapa</p>
+                    <p  onClick={() => { onToggle(2);}}>
+                        Álamos 0Av. 1-87 Z.6 San Miguel Petapa
+                    </p>
                 </span>
             </div>
 
@@ -73,7 +84,7 @@ const Footer = () => {
         </article>
 
         <aside className='footer-map'>
-            <MapFooter />
+            <MapFooter id={currentId} />
         </aside>
     </footer>
   );

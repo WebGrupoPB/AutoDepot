@@ -11,6 +11,24 @@ const center = {
     lng: -90.541980,
 };
 
+const centerAtanasioTzul = {
+  lat: 14.596199,
+  lng: -90.541980,
+};
+
+
+const centerVillaHermosa = {
+  lat: 14.5241238,
+  lng: -90.5549289,
+};
+
+const centerAlamos = {
+  lat: 14.5211069,
+  lng: -90.5361806,
+};
+
+
+
 const mapOptions = {
     disableDefaultUI: true,
     styles: [
@@ -108,20 +126,29 @@ const mapOptions = {
   };
 
 
-function MapFooter() {
-    const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: "AIzaSyCscKjHtmXETUk2EaN9Oc0XMK7Ez2cll8Y"
-      })
+function MapFooter({id}) {
+  const { isLoaded } = useJsApiLoader({
+      googleMapsApiKey: "AIzaSyCscKjHtmXETUk2EaN9Oc0XMK7Ez2cll8Y"
+    })
 
+  let centerCoords;
+
+  if (id === 0) {
+      centerCoords = centerAtanasioTzul;
+  } else if (id === 1) {
+      centerCoords = centerVillaHermosa;
+  } else if (id === 2) {
+    centerCoords = centerAlamos;
+  }
 
   return isLoaded ? (
       <GoogleMap
         mapContainerStyle={containerStyle}
-        center={center}
+        center={centerCoords}
         zoom={15}
         options={mapOptions}
       >
-        <Marker position={center} />
+        <Marker position={centerCoords} />
 
       </GoogleMap>
   ) : <></>

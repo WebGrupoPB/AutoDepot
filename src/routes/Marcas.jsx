@@ -9,6 +9,57 @@ import Footer from "../components/Footer";
 import "./styles/Marcas.scss"
 
 
+const logosAll = [
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Puma-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Soil-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/GoodYear-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Bosch-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Boto-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Delmax-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/GreenTour-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Hankook-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Kumho-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/LTH-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Nankang-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Varta-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Winda-logo.png",    
+];
+
+const logosLlantas = [
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/GoodYear-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Delmax-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Boto-logo.png",    
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/GreenTour-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Hankook-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Kumho-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Nankang-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Winda-logo.png",    
+];
+
+const logosLubricantes = [
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Puma-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Soil-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Puma-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Soil-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Puma-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Soil-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Puma-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Soil-logo.png",
+];
+
+const logosBaterias = [
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Bosch-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Hankook-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/LTH-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Varta-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Bosch-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Hankook-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/LTH-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Varta-logo.png",
+];
+
+
+
 
 const Marcas = () => {
     return (
@@ -28,7 +79,7 @@ const Marcas = () => {
                     </article>
 
                     <aside className="carrusel-logos-space">
-                        <CarruselLogos direction={"left"} />
+                        <CarruselLogos direction={"left"} logosInfo={logosLlantas}/>
                         
                     </aside>
                 </section>
@@ -39,7 +90,7 @@ const Marcas = () => {
                     </article>
 
                     <aside className="carrusel-logos-space">
-                        <CarruselLogos direction={"right"} />
+                        <CarruselLogos direction={"right"} logosInfo={logosLubricantes} />
                     </aside>
                 </section>
 
@@ -49,19 +100,19 @@ const Marcas = () => {
                     </article>
 
                     <aside className="carrusel-logos-space">
-                        <CarruselLogos direction={"left"} />
+                        <CarruselLogos direction={"left"} logosInfo={logosBaterias} />
                     </aside>
                 </section>
 
-                <section className="marcas-section">
+                {/* <section className="marcas-section">
                     <article className="title">
                         <h1>consumibles</h1>
                     </article>
 
                     <aside className="carrusel-logos-space">
-                        <CarruselLogos direction={"right"}/>
+                        <CarruselLogos direction={"right"} logosInfo={logosAll} />
                     </aside>
-                </section>
+                </section> */}
 
                 <section className="contacto-area">
                     <Contacto />

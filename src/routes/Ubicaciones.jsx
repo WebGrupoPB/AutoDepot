@@ -55,15 +55,21 @@ const Ubicaciones = () => {
 
                     <aside className="googleMap-area">
                         <div className="googleMap-space">
-                            <MapsUbi id={currentId} />
+                            {/* <MapsUbi id={currentId} /> */}
+
+                            {currentId === 0 && (
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1josK9xxw-WIlYUqTrT5Qbz_Tz9UaFiI&hl=es&ehbc=2E312F" width="100%" height="100%"></iframe>
+                            )}
+
+                            {currentId === 1 && (
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1h9N8IaXYa20_Go2x3NVJtDzkuBgAc50&hl=es&ehbc=2E312F" width="100%" height="100%"></iframe>
+                            )}
                         </div>
 
-                        <div className="textAlert-space">
-                            {currentId === 1 && (
-                                <p>
-                                    <span>Importante</span>: Solo cambio de llantas.
-                                </p>
-                            )}
+                        <div className="textAlert-space">  
+                            <p>
+                                <span>Importante</span>: en Tiendas Walmart solo hay servicio de cambio de llantas.
+                            </p>                       
                         </div>
                     </aside>
                 </section>

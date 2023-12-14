@@ -114,9 +114,9 @@ const Navbar = () => {
                     <NavLink to={"/marcas"} onClick={scrollToTop}>
                         Marcas
                     </NavLink>
-                    <NavLink to={"/empleo"} onClick={scrollToTop}>
+                    {/* <NavLink to={"/empleo"} onClick={scrollToTop}>
                         Empleo
-                    </NavLink>
+                    </NavLink> */}
                 </div>
 
                 <div className="socialMedia-space"> 
@@ -128,9 +128,9 @@ const Navbar = () => {
                         <Link>
                             <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/General/Facebook-Icon.svg" alt="facebook-icon" />
                         </Link>
-                        <Link>
+                        {/* <Link>
                             <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/General/TikTok-Icon.svg" alt="tiktok-icon" />
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </aside>

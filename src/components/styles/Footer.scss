@@ -134,6 +134,7 @@ footer.footer-space {
             span { 
                 display: flex;
                 gap: 1vw;
+                margin: 2vh 0 1vh 0;
 
                 img {
                     width: 2vw;
@@ -152,12 +153,15 @@ footer.footer-space {
                 }
 
                 p {
+                    text-decoration: none;
                     color: #FFF;
                     font-family: 'Montserrat', sans-serif;
                     font-size: 0.75vw;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+
+                    cursor: pointer;
                 }
             }
         }
@@ -346,12 +350,14 @@ footer.footer-space {
                     }
 
                     p {
+                        text-decoration: none;
                         color: #FFF;
                         font-family: 'Montserrat', sans-serif;
                         font-size: 1.75vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                        cursor: pointer;
                     }
                 }
             }
@@ -535,12 +541,14 @@ footer.footer-space {
                     }
 
                     p {
+                        text-decoration: none;
                         color: #FFF;
                         font-family: 'Montserrat', sans-serif;
                         font-size: 1.75vw;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                        cursor: pointer;
                     }
                 }
             }

@@ -10,6 +10,22 @@ import Footer from "../components/Footer";
 import "./styles/Inicio.scss"
 
 
+const logosAll = [
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Puma-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Soil-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/GoodYear-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Bosch-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Boto-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Delmax-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/GreenTour-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Hankook-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Kumho-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/LTH-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Nankang-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Varta-logo.png",
+    "https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Marcas/Logos-marcas/Winda-logo.png",    
+];
+
 
 const Inicio = () => {
     const scrollToTop = () => {
@@ -34,7 +50,7 @@ const Inicio = () => {
                     </article>
 
                     <aside className="carrusel-logos-space">
-                        <CarruselLogos direction={"left"} />
+                        <CarruselLogos direction={"left"} logosInfo={logosAll} />
                     </aside>
                 </section>
 
