@@ -56,7 +56,7 @@ const AgendarFiltro = () => {
                     <Link to={"/agendar/mecanica-rapida"} className="agenda-item" onClick={scrollToTop}>
                         <aside className="img-space">
                             <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Inicio/AgendaCita/Agendacita-img4.png" alt="" />
-                            <h2>MECÁNICA RAPIDA</h2>
+                            <h2>MECÁNICA RÁPIDA</h2>
                         </aside>
 
                         <article className="text-space" style={{ backgroundColor: "#4A529F" }}>

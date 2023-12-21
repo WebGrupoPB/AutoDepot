@@ -31,7 +31,7 @@ const Footer = () => {
                     </p>
 
                     <p>
-                        donde la excelencia en el servicio se encuentra con la experiencia 
+                        Donde la excelencia en el servicio se encuentra con la experiencia 
                         automotriz de vanguardia. Estamos aquí para cuidar de su vehículo como si fuera nuestro 
                         propio tesoro sobre ruedas.
                     </p>
@@ -56,30 +56,39 @@ const Footer = () => {
             <div className='footer-info-ubicaciones'>
                 <h6>Ubicaciones</h6>
 
-                <span onClick={() => { onToggle(0);}}>
+                <NavLink 
+                to={"/ubicaciones"}
+                onClick={() => { onToggle(0);}}
+                >
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Footer/gps_icon_Footer.svg" alt="gps-icon"/>
                     <p  onClick={() => { onToggle(0);}}>
-                        Calzada Atanasio Tzul 20.74 Z.12
+                        Calzada Atanasio Tzul 20-11 Z.12
                     </p>
-                </span>
+                </NavLink>
 
-                <span onClick={() => { onToggle(1);}}>
+                <NavLink 
+                to={"/ubicaciones"}
+                onClick={() => { onToggle(1);}}
+                >
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Footer/gps_icon_Footer.svg" alt="gps-icon" className='gps-icon' />
                     <p  onClick={() => { onToggle(1);}}>
                         Villa Hermosa 1, 23 calle 20-90 Z.7.San Miguel Petapa
                     </p>
-                </span>
+                </NavLink>
 
-                <span onClick={() => { onToggle(2);}}>
+                <NavLink 
+                to={"/ubicaciones"} 
+                onClick={() => { onToggle(2);}}
+                >
                     <img src="https://s3.amazonaws.com/gpblogistic.com/Recursos-GPB-Logistic/General/Footer/gps_icon_Footer.svg" alt="gps-icon" className='gps-icon2' />
                     <p  onClick={() => { onToggle(2);}}>
-                        Álamos 0Av. 1-87 Z.6 San Miguel Petapa
+                        Álamos 0 Av. 1-87 Z.6 San Miguel Petapa
                     </p>
-                </span>
+                </NavLink>
             </div>
 
             <p className='footer-info-copyright'>
-                Todos los derechos reservados ©GPB Logistic, 2023 | Desarrollado Grupo PB
+                Todos los derechos reservados ©Auto Depot, 2023 | Desarrollado Grupo PB
             </p>
         </article>
 

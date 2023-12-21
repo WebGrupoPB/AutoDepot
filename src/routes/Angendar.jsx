@@ -18,7 +18,12 @@ const Agendar = () => {
 
     const isFiltred = serviceType == "agendar-cita" ? true : false;
 
-
+    const titlePage =   serviceType == "alineacion-y-balanceo" ? "ALINEACIÓN Y BALANCEO":
+                        serviceType == "enderezado-y-pintura"  ? "ENDEREZADO Y PINTURA":
+                        serviceType == "diagnostico-de-scanner"  ? "DIAGNÓSTICO DE SCANNER":
+                        serviceType == "mecanica-rapida"  ? "MECÁNICA RÁPIDA":
+                        serviceType == "llantas-y-baterias"  ? "LLANTAS Y BATERÍAS": "LLANTAS Y BATERÍAS";
+                                
     return (
         <>         
             <main className="not-home">
@@ -27,7 +32,7 @@ const Agendar = () => {
                 </header>
 
                 <section className="heroAgendar-section">
-                    <h1>{formattedServiceType}</h1>
+                    <h1>{titlePage}</h1>
                 </section>
 
                 

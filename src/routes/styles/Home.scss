@@ -10,7 +10,7 @@
 }
 
 main.cover-home {
-    background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Home/Autodepot+Gift.gif");
+    background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Home/AutoDepot-HomeGif.gif");
     background-size: 100% 100%;
     width: 100%;
     height: 100vh;
@@ -49,7 +49,7 @@ main.cover-home {
 /*************** Pantallas tablet (768px) y tablet L (1024px) con orientacion vertical  *******************/
 @media (min-width: 750px) and (max-width: 1025px) and (orientation: portrait) {
     main.cover-home {
-        background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Home/Autodepot+Gift.gif");
+        background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Home/AutoDepot-HomeGif.gif");
         background-size: cover;
         background-position-x: center;
         background-position-y: center;
@@ -91,7 +91,7 @@ main.cover-home {
 /*************** Pantallas Movil con orientacion vertical  *******************/
 @media (max-width: 749px) and (orientation: portrait) {
     main.cover-home {
-        background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Home/Autodepot+Gift.gif");
+        background-image: url("https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/Home/AutoDepot-HomeGif.gif");
         background-size: cover;
         background-position-x: center;
         background-position-y: center;
