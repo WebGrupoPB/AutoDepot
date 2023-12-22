@@ -125,7 +125,9 @@ const Navbar = () => {
                         <Link>
                             <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/General/Instagram-Icon.svg" alt="instagram-icon" />
                         </Link>
-                        <Link>
+                        <Link
+                            to={"https://www.facebook.com/AUTODEPOTGT"}
+                        >
                             <img src="https://s3.amazonaws.com/autodepot.la/Recursos-Autodepot/General/Facebook-Icon.svg" alt="facebook-icon" />
                         </Link>
                         {/* <Link>
